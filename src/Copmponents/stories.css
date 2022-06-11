@@ -1,0 +1,89 @@
+.card-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: auto;
+  width: 60vw;
+}
+.card {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgb(214, 230, 245);
+}
+.title {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+.cardInfo p {
+  font-size: 16px;
+}
+.author,
+.comments {
+  font-weight: bold;
+  color: grey;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+.cardButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+.left a {
+  color: black;
+}
+.left:hover + .left a {
+  color: blue;
+}
+.right {
+  color: red;
+}
+.right:hover {
+  color: rgb(218, 13, 13);
+}
+
+/*******Pagination and SEarch style starts*****/
+.pagination{display: flex; flex-direction: row;  justify-content: space-between; width: 40%; margin: 10px; align-items: center;}
+.pagination p{font-weight: bold;}
+.pagination button{border: none; background-color: black; color: white; cursor: pointer; padding: 5px 20px;}
+
+input{ padding: 5px; margin: 10px; outline: none; width: 100%; border: 1px solid grey; border-radius:5px ; -webkit-border-radius:5px ; -moz-border-radius:5px ; -ms-border-radius:5px ; -o-border-radius:5px ; }
+
+@media (max-width: 1000px) {
+  .card-div {
+    width: 70vw;
+  }
+}
+@media (max-width: 800px) {
+  .card-div {
+    width: 80vw;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .cardInfo p {
+    font-size: 14px;
+  }
+  .pagination{width: 50%;}
+}
+@media (max-width: 600px) {
+  .card-div {
+    width: 90vw;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .cardInfo p {
+    font-size: 12px;
+  }
+  a {
+    font-size: 12px;
+  }
+  .pagination{width: 70%;}
+}
